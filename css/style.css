@@ -147,7 +147,7 @@ Menu movil y tableta
 .menu-links > li > a{
     font-family:"Crimson Roman";
     font-size: 2.2em;
-    color:red;
+    color: red;
     /* color: var(--color-azul); */
 }
 
