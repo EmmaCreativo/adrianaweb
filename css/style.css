@@ -147,8 +147,7 @@ Menu movil y tableta
 .menu-links > li > a{
     font-family:"Crimson Roman";
     font-size: 2.2em;
-    color: red;
-    /* color: var(--color-azul); */
+    color: var(--color-azul);
 }
 
 
@@ -194,9 +193,9 @@ Menu movil y tableta
    
 }
 .menu-redes > span:nth-child(even) {
-    width: 1.5%;
+    width: 1.4%;
     height: 90%;
-    margin-right: 8%;
+    margin-right: 7.5%;
     background: var(--color-azul);
 }
 .menu-redes > a:nth-of-type(n) > div{
