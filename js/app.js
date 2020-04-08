@@ -1,15 +1,25 @@
 // Metodos del menu en movil y tableta
-const cerrar_menu = document.getElementById('cerrar');
-const menu_oculto = document.getElementById('menuOculto');
+var menu_oculto = document.querySelector('.menu-oculto');
+var menu = document.querySelector('.menu-movil');
+var cerrar = document.getElementById('cerrar');
 
-// cerrar
-cerrar_menu.addEventListener('click', function() {
-  menu_oculto.style.transform = "translateY(-100vh)";
-  menu_oculto.style.transition = ".5s ease-in-out";
-});
+ //Funcion del menu
+function toggleMenu(event) {
+  this.classList.toggle('menu-act');
+  menu_oculto.classList.toggle('menu-activo');
+  event.preventDefault();
 
-// abrir
+  if (menu.classList.contains('menu-act')) {
+    console.log('hola');
+    cerrar.innerHTML = 'Cerrar';
+  } else{
+    cerrar.innerHTML = 'Menu';
+  }
+}
 
+// evento
+
+menu.addEventListener('click', toggleMenu, false);
 
 // Navegacion de la pagina principal 
 var swiper = new Swiper('.swiper-container', {

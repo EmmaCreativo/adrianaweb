@@ -78,12 +78,14 @@ Menu movil y tableta
     width: 100%;
     height: 100%;
     position: absolute;
-    outline:1px solid red ;
     z-index: 3;
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* opacity: 50%; */
+    transition: .5s ease-in;
+    transform: translateY(-100vh);
 
 
 }
@@ -92,7 +94,6 @@ Menu movil y tableta
 .menu-container{
     width: 100%;
     height: 65%;
-    /* outline:1px solid rgb(96, 65, 140) ; */
     position: relative;
     top: 5%;
     display: flex;
@@ -102,36 +103,6 @@ Menu movil y tableta
     text-align: center;
     cursor: pointer;
 }
-
-/* ------------- Boton cerrar -------------- */
-.cerrar-menu{
-    width: 18%;
-    height: 3.5%;
-    position: absolute;
-    top:5%;
-    right: 8%;
-    color: var(--color-azul);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 4;
-    cursor: pointer;
-    
-}
-
-.cerrar-menu > h3{
-    font-size: 1.5em;
-    margin-bottom: 0;
-    font-family:"Crimson Roman";
-}
-
-.cerrar-menu > span{
-    width: 3%;
-    height: 75%;
-    background: var(--color-azul);
-}
-
 
 /* ------------- Menu-links -------------- */
 
@@ -216,7 +187,68 @@ Menu movil y tableta
 .menu-redes > a:nth-of-type(3) > div{
     background: url(../svg/whatsapp.svg) no-repeat;
 }
+/* 
+--------------------------------------------------------------------------------------
+NAV movil
+--------------------------------------------------------------------------------------
 
+*/
+
+nav{
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+/* ------------- Boton Abrir -------------- */
+.menu-movil{
+    width: 18%;
+    height: 40%;
+    position: relative;
+    top:5%;
+    right: 8%;
+    color: var(--color-azul);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.menu-movil > h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-family:"Crimson Roman";
+}
+
+.menu-movil > span{
+    width: 3%;
+    height: 90%;
+    background: var(--color-azul);
+}
+
+/* ------------- Menu activo -------------- */
+.menu-activo{
+    transition: .5s ease-in-out;
+    transform: translateY(0vh);
+}
+
+.menu-act{
+    color: var(--color-azul);
+}
+
+/* ------------- Logo -------------- */
+
+#logo-principal{
+    position: relative;
+    left: 8%;
+}
 
 
 
