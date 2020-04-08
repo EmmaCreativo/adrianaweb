@@ -1,0 +1,264 @@
+/* 
+--------------------------------------------------------------------------------------
+Reset
+--------------------------------------------------------------------------------------
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+label{
+	cursor: pointer;
+}
+
+[type=checkbox],[type=text]{
+	display: none;
+}
+
+ul,li{
+ list-style: none;
+ margin-bottom: 0;
+}
+
+a,a:link,a:hover,a:visited,a::after,a::before{
+    color:#000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* 
+--------------------------------------------------------------------------------------
+Variables colores
+--------------------------------------------------------------------------------------
+
+*/
+:root{
+    --color-azul: #5E758D;
+    --color-beige:#EADED5;
+    --color-gris:#58595B;
+    
+
+}
+
+
+
+/* 
+--------------------------------------------------------------------------------------
+tipografias
+--------------------------------------------------------------------------------------
+
+*/
+
+
+/* ------------- Serif -------------- */
+@font-face{
+	font-family:"Crimson Roman";
+	src: url(../fonts/Crimson-Roman.otf) format("woff");
+	font-weight: lighter;
+	}
+
+    /* ------------- Sans Serif -------------- */
+@font-face{
+	font-family:"Century Gothic";
+	src: url(../fonts/Crimson-Roman.otf) format("woff");
+	font-weight: normal;
+	}
+
+/* 
+--------------------------------------------------------------------------------------
+Menu movil y tableta
+--------------------------------------------------------------------------------------
+
+*/
+.menu-oculto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    outline:1px solid red ;
+    z-index: 3;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+/* ------------- contenedor del menu oculto -------------- */
+.menu-container{
+    width: 100%;
+    height: 65%;
+    /* outline:1px solid rgb(96, 65, 140) ; */
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ------------- Boton cerrar -------------- */
+.cerrar-menu{
+    width: 18%;
+    height: 3.5%;
+    position: absolute;
+    top:5%;
+    right: 8%;
+    color: var(--color-azul);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    cursor: pointer;
+    
+}
+
+.cerrar-menu > h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-family:"Crimson Roman";
+}
+
+.cerrar-menu > span{
+    width: 3%;
+    height: 75%;
+    background: var(--color-azul);
+}
+
+
+/* ------------- Menu-links -------------- */
+
+.menu-links{
+    width: 100%;
+    height: 65%;
+    /* outline:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-links > li > a{
+    font-family:"Crimson Roman";
+    font-size: 2.7em;
+    color: var(--color-azul);
+}
+
+
+/* ------------- Menu-idiomas -------------- */
+.menu-idiomas{
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* outline:1px solid green; */
+}
+
+.menu-idiomas > li>a,h5{
+    font-family:"Crimson Roman";
+    font-size: 1.4em;
+    color: var(--color-azul);
+}
+
+.menu-idiomas > li>a:active{
+    color: red;
+}
+
+/* ------------- Menu-Redes sociales -------------- */
+
+.menu-redes{
+    width: 43%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* outline:1px solid blue ; */
+}
+
+.menu-redes > a{
+    width: 14%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.menu-redes > span:nth-child(even) {
+    width: 1.5%;
+    height: 90%;
+    margin-right: 8%;
+    background: var(--color-azul);
+}
+.menu-redes > a:nth-of-type(n) > div{
+    width: 100%;
+    height: 100%;
+}
+/* facebook */
+.menu-redes > a:nth-of-type(1) > div{
+    background: url(../svg/facebook.svg) no-repeat;
+    
+}
+
+/* instagram */
+.menu-redes > a:nth-of-type(2) > div{
+    background: url(../svg/instagram.svg) no-repeat;
+}
+/* whatsapp */
+.menu-redes > a:nth-of-type(3) > div{
+    background: url(../svg/whatsapp.svg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid red;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
