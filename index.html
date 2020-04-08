@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PARA CACHE -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <title>Adriana Ovares Studio And Photo</title>
     <!-- **************************************** importacion css *****************************************-->
 
@@ -18,13 +23,8 @@
 </head>
 <body>
     <div class="menu-oculto">
-         <!-- boton cerrar menu -->
-         <div class="cerrar-menu">
-            <h3>Cerrar</h3>
-            <span></span>
-        </div>
         <!-- Contenedor del nav -->
-        <div class="menu-container">
+        <div  class="menu-container">
            
             <!-- menu links -->
             <ul class="menu-links">
@@ -57,8 +57,18 @@
     </div>
 
 
+    <nav>
+        <div id="logo-principal">logo</div>
+        <div class="menu-movil">
+            <h3 id="cerrar">Menu</h3>
+            <span></span>
+        </div>
+
+    </nav>
+
     <!-- Contenedor padre -->
     <div class="app  swiper-container">
+       
         <div class="swiper-wrapper">
             <div class="swiper-slide">Video</div>
             <div class="swiper-slide">Estudio</div>
