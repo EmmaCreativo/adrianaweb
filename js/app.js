@@ -28,7 +28,8 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 0,
     mousewheel: true,
     pagination: {
-      el: '.swiper-pagination',
       clickable: true,
     },
 });
+
+
