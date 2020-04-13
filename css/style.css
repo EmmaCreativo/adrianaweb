@@ -29,6 +29,9 @@ a,a:link,a:hover,a:visited,a::after,a::before{
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
 
 /* 
 --------------------------------------------------------------------------------------
@@ -64,7 +67,7 @@ tipografias
     /* ------------- Sans Serif -------------- */
 @font-face{
 	font-family:"Century Gothic";
-	src: url(../fonts/Crimson-Roman.otf) format("woff");
+	src: url(../fonts/Century\ Gothic.ttf) format("woff");
 	font-weight: normal;
 	}
 
@@ -202,6 +205,7 @@ nav{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    
 
 }
 
@@ -218,6 +222,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    
     
 }
 
@@ -250,6 +255,79 @@ nav{
     left: 8%;
 }
 
+/* 
+--------------------------------------------------------------------------------------
+Video Pagina Principal
+--------------------------------------------------------------------------------------
+
+*/
+
+#container-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+
+/* 
+--------------------------------------------------------------------------------------
+Estudio Principal
+--------------------------------------------------------------------------------------
+
+*/
+
+/* Imagen */
+.imagen-ecosistema{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;  
+}
+
+/* contenedor del contenido */
+.contenido-ecosistemas{
+    position: relative;
+    top: 30%;
+    width: 100%;
+    height:22%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.contenido-ecosistemas > h2{
+    font-size: 5.5em;
+    font-family:"Crimson Roman";
+    color: #fff;
+    line-height: .7em;
+   
+}
+
+.contenido-ecosistemas > h4{
+    font-size: .7em;
+    font-family:"Century Gothic";
+    color: #fff;
+}
+
+.contenido-ecosistemas > .button{
+    font-size: 1em;
+    font-family:"Century Gothic";
+    color: #fff;
+    width: 27%;
+    height: 24%;
+    padding-top: .5%;
+    border: 1px solid #fff ;
+    border-radius: 100px;
+    text-decoration: none;
+}
+/* titulo corporativo */
+#titulo-corporativo{
+    font-size: 3.6em;
+}
 
 
 

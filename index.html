@@ -35,9 +35,9 @@
             </ul>
             <!-- menu cambio de idioma -->
             <ul class="menu-idiomas">
-                <li data-espanol="espanol"><a href="">Es</a></li>
+                <li data-idioma="espanol"><a href="">Es</a></li>
                 <h5>/</h5>
-                <li data-ingles="ingles"><a href="">En</a></li>
+                <li data-idioma="ingles"><a href="">En</a></li>
             </ul>
             <!-- menu redes sociales links -->
             <ul class="menu-redes">
@@ -70,10 +70,57 @@
     <div class="app  swiper-container">
        
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Video</div>
-            <div class="swiper-slide">Estudio</div>
-            <div class="swiper-slide">Exterior</div>
-            <div class="swiper-slide">Corporativo</div>
+
+            <!-- Video principal -->
+            <div id="container-video" class="swiper-slide">
+                <video class="video" src="video/prueba.mp4" loop autoplay muted controls height="88%"></video>
+            </div>
+
+            <!-- Estudio principal -->
+            <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+                    <source media="(min-width: 320px)" srcset="images/Estudio-principal.jpg">
+                    <img class="imagen-ecosistema" src="images/Estudio-principal.jpg" alt="mujer sentada">
+                </picture>
+
+                <div class="contenido-ecosistemas">
+                    <h2>Estudio</h2>
+                    <h4>Novias | Familia | Embarazo | Pareja | Y más</h4>
+                    <a href="" class="button">Entrar</a>
+                </div>
+
+            </div>
+
+            <!-- Exterior principal -->
+            <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+                    <source media="(min-width: 320px)" srcset="images/Exterior-principal.jpg">
+                    <img class="imagen-ecosistema" src="images/Exterior-principal.jpg" alt="mujer sentada">
+                </picture>
+
+                <div class="contenido-ecosistemas">
+                    <h2>Exterior</h2>
+                    <h4>Bodas | Novias | Embarazo | Pareja | Y más</h4>
+                    <a href="" class="button">Entrar</a>
+                </div>
+            </div>
+
+            <!-- Corporativo principal -->
+            <div class="swiper-slide">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+                    <source media="(min-width: 320px)" srcset="images/corporativo-principal.jpg">
+                    <img class="imagen-ecosistema" src="images/corporativo-principal.jpg" alt="mujer sentada">
+                </picture>
+
+                <div class="contenido-ecosistemas">
+                    <h2 id="titulo-corporativo">Corporativo</h2>
+                    <h4>Marca Personal | Grupal | Empresas</h4>
+                    <a href="" class="button">Entrar</a>
+                </div>
+            </div>
             <div class="swiper-slide">Nuestros clientes</div>
             <div class="swiper-slide">El estudio</div>
             <div class="swiper-slide">Contactenos</div>
