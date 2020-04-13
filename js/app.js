@@ -33,3 +33,27 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
+// Cambio de color del menu dependiendo del fondo
+
+const nav = document.querySelector('.nav'); 
+const obser = document.querySelector('.swiper-slide');
+const opcions = {
+  rootMargin: '-100px 0px 0px -100px'
+};
+
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach(entry => {
+    // console.log(entry.target);
+    if(!entry.isIntersecting){
+      nav.classList.add('color-cambio');
+      console.log('sirve');
+    } else{
+      nav.classList.remove('color-cambio');
+    }
+  });
+
+
+}, opcions);
+
+
+observer.observe(obser);
