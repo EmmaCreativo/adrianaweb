@@ -628,9 +628,10 @@ form > button[type=submit]{
     cursor: pointer;
     font-family:"Crimson Roman";
   }
-  form > button[type=submit]:focus{
+  form > button[type=submit]:hover, form > button[type=submit]:focus{
       border: none;
       text-shadow: none;
+      outline: none;
   }
 
 
@@ -667,15 +668,17 @@ footer > a:nth-child(3) > h3{
 
 
 
-
-
 /* clase para cambiar el color del menu dependiendo del fondo */
 .color-cambio{
     color:#fff;
 }
 
 
-
+/* 
+--------------------------------------------------------------------------------------
+Navegaion Principal
+--------------------------------------------------------------------------------------
+*/
 html, body {
     position: relative;
     height: 100%;
@@ -712,3 +715,15 @@ html, body {
     -webkit-align-items: center;
     align-items: center;
   }
+
+
+
+
+/*-----------------Responsive---------------------------------------------------------------------------------------------------------------------- */
+
+/* 
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+*/
