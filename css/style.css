@@ -250,8 +250,13 @@ nav{
 /* ------------- Logo -------------- */
 
 #logo-principal{
+    width: 15%;
+    height: 65%;
+    /* outline: 1px solid red; */
     position: relative;
+    top: 20%;
     left: 8%;
+    background: url(../svg/logo-web.svg) no-repeat;
 }
 
 /* 
