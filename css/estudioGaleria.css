@@ -130,9 +130,18 @@ Responsive
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
 
+
+        .tituloCategorias{
+            height: 10%;
+
+        }
+
+
         /* contenedor principal */
         .contenedor-padre{
             height: 80% !important;
+            top: 20%;
+            margin-top: 0;
         
         }
 
