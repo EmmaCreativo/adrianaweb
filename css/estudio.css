@@ -155,7 +155,32 @@ Responsive
 
 /* Final del media querie anchos desde 320  */
 }
+/* anchos desde 380 */
 
+@media (min-width: 380px) and (max-width: 413px){
+
+
+    .estudio-principal{
+        height: 199%;
+        /* top:-4%; */
+        align-content: initial;
+        grid-template-columns: repeat(auto-fill, 29.7em);
+        grid-template-rows: repeat(auto-fill, 15em);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Final del media querie anchos desde 320  */
+}
 
 /* anchos desde 414 */
 
