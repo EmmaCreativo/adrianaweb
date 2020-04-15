@@ -45,15 +45,17 @@ Estilos principales
 --------------------------------------------------------------------------------------
 */
 
-
 /* contenedor principal */
 .contenedor-padre{
-    height: 79.4vh !important;
+    height: 80% !important;
     position: absolute;
     margin-top: 17%;
 }
 
 
+#conten-galeria{
+    height: 90%;
+}
 /* Titulo categorias */
 
 .tituloCategorias{
@@ -91,6 +93,7 @@ Estilos principales
 .imagenGaleria1{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo1.jpg) no-repeat right;
     background-size: cover;
+    
 } 
 
 
@@ -114,6 +117,14 @@ Estilos principales
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat left;
     background-size: cover;
 } 
+
+
+
+/* numeracion */
+
+.swiper-pagination-bullet-active{
+    background: var(--color-azul);
+}
 
 /* 
 --------------------------------------------------------------------------------------
