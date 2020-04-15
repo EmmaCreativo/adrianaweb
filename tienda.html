@@ -69,18 +69,48 @@
             <h1 style="display: none;">Adriana Ovares Studio and Photo</h1>
         </nav>
    </header>
+    
 
+    <div class="carrito"></div>
     <!-- Contenedor padre -->
-    <section class="estudio-principal">
-        <div><a href="EstudioGaleria.html">Embarazo</a></div>
-        <div><a href="">Familia</a></div>
-        <div><a href="">Marca Personal</a></div>
-        <div><a href="">Niños</a></div>
-        <div><a href="">Novias</a></div>
-        <div><a href="">Pareja</a></div>
-        <div><a href="">Sesión Personal</a></div>
-    </section>
+   
+    <div id="contenedor-tienda" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
 
+
+        <!-- Modal de eleccion de tamaño -->
+        <div class="modal fade bd-example-modal-sm" id="modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                ...
+              </div>
+            </div>
+          </div>
+          
+
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <h2 class="precio">$15 - $35</h2>
+        <button type="button" data-toggle="modal" data-target="#modal">Seleccionar Tamaño</button>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+        
+      </div>
 
 
 
@@ -109,5 +139,7 @@
     <script src="js/preloadjs.min.js"></script>
         <!-- **************************************** App *****************************************-->
     <script src="js/app.js"></script>
+
+    <script src="js/tienda.js"></script>
 </body>
 </html>

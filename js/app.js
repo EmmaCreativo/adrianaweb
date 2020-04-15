@@ -46,3 +46,29 @@ menu.addEventListener('click', toggleMenu, false);
 
 
 // observer.observe(obser);
+
+
+
+
+
+
+
+
+
+ // prueba para carrito
+
+// var original = 'http://127.0.0.1:5500/EstudioGaleria.html';
+
+// var dir = window.location.href;
+// //   dir.toString;
+//   console.log(dir);
+
+//   function observar() {
+//       if (original == dir) {
+//           alert("es igual");
+//       } else {
+//           alert("no es igual");
+//       }
+//   }
+
+//   observar();
