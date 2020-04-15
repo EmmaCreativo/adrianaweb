@@ -293,8 +293,8 @@ Responsive
     .estudio-principal{
         top: 0;
         align-content: center;
-        grid-template-columns: repeat(3, 29em);
-        grid-template-rows: repeat(3, 15em);
+        grid-template-columns: repeat(3, 35em);
+        grid-template-rows: repeat(3, 18em);
     }
 
 
@@ -308,7 +308,28 @@ Responsive
 }
 
 
+/* Imac  */
 
+
+@media (min-width : 2560px){
+
+
+    .estudio-principal{
+        top: 0;
+        align-content: center;
+        grid-template-columns: repeat(3, 33em);
+        grid-template-rows: repeat(3, 18em);
+    }
+
+
+  
+
+
+
+
+
+/* Final del media querie anchos desde 1920  */
+}
 
 
 

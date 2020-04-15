@@ -10,28 +10,17 @@ function toggleMenu(event) {
   event.preventDefault();
 
   if (menu.classList.contains('menu-act')) {
-    console.log('hola');
+    
     cerrar.innerHTML = 'Cerrar';
   } else{
     cerrar.innerHTML = 'Menu';
   }
 }
 
+
 // evento
 
 menu.addEventListener('click', toggleMenu, false);
-
-// Navegacion de la pagina principal 
-var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 1,
-    spaceBetween: 0,
-    mousewheel: true,
-    pagination: {
-      clickable: true,
-    },
-});
-
 
 // Cambio de color del menu dependiendo del fondo
 
