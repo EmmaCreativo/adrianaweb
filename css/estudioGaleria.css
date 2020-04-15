@@ -83,29 +83,34 @@ Estilos principales
 
 /* Imagenes de la galeria */
 
-.swiper-slide:nth-child(1){
+.generalImg{
+    width: 100%;
+    height: 100%;
+}
+
+.imagenGaleria1{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo1.jpg) no-repeat right;
     background-size: cover;
 } 
 
 
-.swiper-slide:nth-child(2){
+.imagenGaleria2{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat right;
     background-size: cover;
 } 
 
-.swiper-slide:nth-child(3){
+.imagenGaleria3{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo3.jpg) no-repeat right;
     background-size: cover;
 } 
 
-.swiper-slide:nth-child(4){
+.imagenGaleria4{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo1.jpg) no-repeat right;
     background-size: cover;
 } 
 
 
-.swiper-slide:nth-child(5){
+.imagenGaleria5{
     background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat right;
     background-size: cover;
 } 
