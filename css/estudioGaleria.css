@@ -95,7 +95,7 @@ Estilos principales
 
 
 .imagenGaleria2{
-    background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat right;
+    background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat left;
     background-size: cover;
 } 
 
@@ -111,6 +111,34 @@ Estilos principales
 
 
 .imagenGaleria5{
-    background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat right;
+    background:url(../images/exteriorEmbarazo/imgEsEmbarazo2.jpg) no-repeat left;
     background-size: cover;
 } 
+
+/* 
+--------------------------------------------------------------------------------------
+Responsive
+--------------------------------------------------------------------------------------
+*/
+
+
+
+
+/* Iphone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+        /* contenedor principal */
+        .contenedor-padre{
+            height: 81vh !important;
+        
+        }
+
+
+/* Final del media querie Iphone X  */
+    }
+
+
+
