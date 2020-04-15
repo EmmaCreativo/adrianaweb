@@ -93,7 +93,7 @@ Menu movil y tableta
 .menu-oculto{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     background: #fff;
     display: flex;
@@ -298,18 +298,39 @@ Estudio Exterior Corporativo Principal
 */
 
 /* Imagen */
-.imagen-ecosistema{
+/* .imagen-ecosistema{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;  
-}
+} */
 
-.image{
+/* Imagen principal estudio */
+.imagen-principal-estudio{
     width: 100%;
     height: 100%;
     position: absolute;
     background: url(../images/Estudio-principal.jpg) no-repeat top center;
+    background-size: cover;
+
+}
+
+/* Imagen principal estudio */
+.imagen-principal-exterior{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/Exterior-principal.jpg) no-repeat top center;
+    background-size: cover;
+
+}
+
+/* Imagen principal estudio */
+.imagen-principal-corporativo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/Corporativo-principal.jpg) no-repeat top center;
     background-size: cover;
 
 }

@@ -68,7 +68,6 @@ Estilos principales
 .estudio-principal > div:nth-child(n){
     width: 101%;
     height: 100%;
-    background: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,4 +122,233 @@ Estilos principales
 .estudio-principal > div:nth-child(7){
     background: url(../images/categoria1.jpg) no-repeat;
     background-size: cover;
+}
+
+
+/* 
+--------------------------------------------------------------------------------------
+Responsive
+--------------------------------------------------------------------------------------
+*/
+
+/* anchos desde 320 */
+
+@media (min-width: 320px) and (max-width: 360px){
+
+    .estudio-principal{
+        height: 229.7vh;
+        /* top:-4%; */
+        grid-template-rows: repeat(auto-fill, 15em);
+        align-content: initial;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+/* Final del media querie anchos desde 320  */
+}
+
+
+/* anchos desde 414 */
+
+@media (min-width: 414px) and (max-width: 767px){
+
+
+    .estudio-principal{
+        height: 199%;
+        /* top:-4%; */
+        align-content: initial;
+        grid-template-columns: repeat(auto-fill, 29.7em);
+        grid-template-rows: repeat(auto-fill, 15em);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Final del media querie anchos desde 320  */
+}
+
+
+/* anchos desde 768 */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .estudio-principal{
+        height: 90vh;
+        /* top:-4%; */
+        align-content: initial;
+        grid-template-columns: repeat(auto-fill, 27.4em);
+        grid-template-rows: repeat(auto-fill, 16.45em);
+    }
+
+
+    .estudio-principal > div:nth-child(n)::before{
+        
+        width: 99%;
+        
+      
+    }
+
+ /* Final del media querie anchos desde 768  */   
+}
+
+
+/* anchos desde 1224 */
+@media (min-width : 1224px){
+
+
+    .estudio-principal{
+        height: 90vh;
+        /* top:-4%; */
+        align-content: initial;
+        grid-template-columns: repeat(auto-fill, 27.4em);
+        grid-template-rows: repeat(auto-fill, 16.45em);
+    }
+
+
+    .estudio-principal > div:nth-child(n)::before{
+        
+        width: 99%;
+        
+      
+    }
+
+
+
+
+
+/* Final del media querie anchos desde 1360  */
+}
+
+
+
+/* anchos desde 1360 */
+@media (min-width : 1360px){
+
+
+    .estudio-principal{
+        align-content: center;
+        grid-template-columns: repeat(auto-fill, 26.4em);
+        grid-template-rows: repeat(auto-fill, 13.45em);
+    }
+
+
+  
+
+
+
+
+
+/* Final del media querie anchos desde 1360  */
+}
+
+
+
+/* anchos desde 1920  */
+
+
+@media (min-width : 1920px){
+
+
+    .estudio-principal{
+        top: 0;
+        align-content: center;
+        grid-template-columns: repeat(3, 29em);
+        grid-template-rows: repeat(3, 15em);
+    }
+
+
+  
+
+
+
+
+
+/* Final del media querie anchos desde 1920  */
+}
+
+
+
+
+
+
+
+
+/* Iphone 5 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 360px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+        .estudio-principal{
+            height: 255vh;
+        }
+
+
+
+/* Final del media querie Iphone 5 */
+}
+
+
+
+
+
+/* Iphone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+        .estudio-principal{
+            height: 181%;
+            /* top:-4%; */
+            align-content: initial;
+            grid-template-columns: repeat(auto-fill, 29.7em);
+            grid-template-rows: repeat(auto-fill, 15em);
+        }
+
+
+/* Final del media querie Iphone X  */
+    }
+
+
+
+
+
+
+
+/*  iPad Pro */
+/* Portrait and Landscape */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+
+    .estudio-principal{
+    
+        align-content: center;
+       
+    }
+
+
+
+/* Final del media querie Ipad Pro */
 }
