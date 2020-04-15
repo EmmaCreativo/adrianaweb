@@ -305,6 +305,16 @@ Estudio Exterior Corporativo Principal
     top: 0;  
 }
 
+.image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/Estudio-principal.jpg) no-repeat top center;
+    background-size: cover;
+
+}
+
+
 /* contenedor del contenido */
 .contenido-ecosistemas{
     position: relative;
