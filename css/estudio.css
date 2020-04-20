@@ -125,6 +125,9 @@ Estilos principales
 }
 
 
+
+
+
 /* 
 --------------------------------------------------------------------------------------
 Responsive
@@ -344,9 +347,9 @@ Responsive
 
 
         .estudio-principal{
-            height: 255vh;
+            /* height: 255vh; */
+            grid-template-rows: auto;
         }
-
 
 
 /* Final del media querie Iphone 5 */
