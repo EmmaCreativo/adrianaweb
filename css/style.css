@@ -13,7 +13,6 @@ Impotacion de los estilos de otras partes de la web
 /* estilos de tienda.html */
 @import url("tienda.css");
 
-
 /* 
 --------------------------------------------------------------------------------------
 Reset
@@ -1028,5 +1027,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 
 
+<<<<<<< HEAD
 /* Final del media querie Ipad Pro */
 }
+=======
+*/
+>>>>>>> bfd3e66d7c2abfa453ab9a78d46d1d9b27c98475
