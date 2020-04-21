@@ -445,9 +445,22 @@ Nuestros clientes Principal
 }
 
 /* imagen del carrusel */
-.grid-carrusel > img{
+.grid-carrusel > .imagen-logo{
     position: relative;
-    top: 25%;
+    top: 20%;
+    width: 11em;
+}
+
+.grid-carrusel > .imagen-logo:nth-of-type(1){
+    background: url(../images/logo-epic.jpg) no-repeat;
+}
+
+.grid-carrusel > .imagen-logo:nth-of-type(2){
+    background: url(../images/logo-epic.jpg) no-repeat;
+}
+
+.grid-carrusel > .imagen-logo:nth-of-type(3){
+    background: url(../images/logo-epic.jpg) no-repeat;
 }
 
 /* texto del carrusel */
@@ -513,7 +526,7 @@ El estudio Principal
 
 .parrafo-estudio > p{
     width: 80%;
-    font-size: .7em;
+    font-size: .6em;
     font-family:"Century Gothic";
     color: var(--color-azul);
     text-align: justify;
@@ -696,20 +709,24 @@ footer > a > h3{
     color: #fff;
 }
 
-footer > a:nth-child(1) > h3{
+footer > a:nth-child(3) > h3{
     margin: 8% 0 8% 0;
 }
 
-footer > a:nth-child(2) > h3{
+footer > a:nth-child(4) > h3{
     margin: 0% 0 10% 0;
 }
 
-footer > a:nth-child(3) > h3{
+footer > a:nth-child(5) > h3{
     width: 100%;
     margin-top: 7%;
     font-size: .55em;
 }
 
+/* clase para volver visible partes del footer */
+.extra-info{
+    display: none;
+}
 
 
 /* clase para cambiar el color del menu dependiendo del fondo */
@@ -795,6 +812,10 @@ Anchos desde 380
     .menu-movil{
         width: 17%;
     }
+
+    
+
+
     /* titulos principales */
     .contenido-ecosistemas > h2{
         font-size: 5.8em;
@@ -809,9 +830,13 @@ Anchos desde 380
     }
     /* boton ecosistemas */
     .contenido-ecosistemas > .button{
-        padding-top: .9%;
+        padding-top: .8%;
     }
 
+    /* linea de span entre redes sociales principal */
+    .contac-redes > span:nth-child(even) {
+        width: .5%;
+    }
    
 
 
@@ -830,6 +855,109 @@ Anchos desde 414
 
 @media (min-width: 414px) and (max-width: 767px){
 
+    /* menu oculto */
+    .menu-redes{
+        width: 15em;
+    }
+    /* menu */
+    .menu-movil{
+        width: 5.35em;
+    }
+
+
+    /* adorno del menu */
+    .menu-movil > h3{
+        margin-left: .5em;
+    }
+
+    /* imagenes de los ecosistemas */
+    /* Imagen principal estudio */
+    .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-lg.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-lg.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-lg.jpg) no-repeat top center;
+        background-size: cover;
+        
+    }
+
+
+    /* Textos ecosistemas */
+    .contenido-ecosistemas > h4{
+        font-size: .75em;
+    }
+
+    /* boton ecosistema */
+    .contenido-ecosistemas > .button{
+        width: 9em;
+        padding-top: 1%;
+    }
+
+    /* titulo corporativo */
+    #titulo-corporativo{
+        font-size: 3.9em;
+    }
+    /* Grid Carrusel */
+    .grid-carrusel{
+        position: relative;
+        top: 2em;
+    }
+    /* Texto grid carrusel */
+    .grid-carrusel > p{
+        width: 25em;
+    }
+
+    /* imagen carrusel */
+    .grid-carrusel > .imagen-logo:nth-of-type(1){
+        background: url(../images/logo-epic-lg.jpg) no-repeat;
+        background-size: contain;
+    }
+    
+    .grid-carrusel > .imagen-logo:nth-of-type(2){
+        background: url(../images/logo-epic-lg.jpg) no-repeat;
+    }
+    
+    .grid-carrusel > .imagen-logo:nth-of-type(3){
+        background: url(../images/logo-epic-lg.jpg) no-repeat;
+    }
+
+
+    /* imagen del estudio */
+    .imagen-estudio{
+        background:url(../images/estudio-foto-lg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    /* Parrafo de el estudio */
+    .parrafo-estudio > p{
+        font-size: .7em;
+        line-height: 15pt;
+    }
+
+
+    /* Informacion de contacto */
+    .info-contacto > h3{
+        font-size: .85em;
+    }
+
+    /* linea de span entre redes sociales principal */
+     .contac-redes > span:nth-child(even) {
+        width: .5%;
+    }
+
+    /*titulo suscribir al newsletter  */
+    .contenedor-contac > h2{
+        font-size: 1.4em;
+    }
+
 /* Final del media querie anchos desde 414  */
 }
 
@@ -837,16 +965,366 @@ Anchos desde 414
 
 /* 
 --------------------------------------------------------------------------------------
-Anchos desde 768
+Anchos desde 768 TABLETAS
 --------------------------------------------------------------------------------------
 */
 
 @media (min-width: 768px) and (max-width: 1024px){
-   
+    /* nav */
+    nav{
+        height: 6%;
+    }
+    /* menu */
+    .menu-movil{
+        width: 5em;
+    }
+    /* menu adorno */
+    .menu-movil > span{
+        width: 2%;
+        height: 68%;
+    }
+
+    /* menu oculto */
+    .menu-links > li > a{
+        font-size: 2.5em;
+    }
+
+    .menu-redes {
+        width: 18em;
+    }
+
+    .menu-redes > span:nth-child(even) {
+        height: 81%;
+    }
+
+    .menu-idiomas > li>a, h5{
+        font-size: 1,6em;
+    }
+
+    video{
+        height: 98%;
+    }
+
+    /* Cada ecosistema */
+    /* titulos */
+    .contenido-ecosistemas > h2{
+        font-size: 7em;
+    }
+    #titulo-corporativo{
+        font-size: 6.3em;
+    }
+    .contenido-ecosistemas > h4{
+        font-size: .9em;
+    }
+    /* boton */
+    .contenido-ecosistemas > .button{
+        font-size: 1.4em;
+        width: 25%;
+        height: 21%;
+    }
+    /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-tb.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-tb.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-tb.jpg) no-repeat top center;
+        background-size: cover;
+        
+    }
+
+    /* Nuestros clientes */
+    .nuestros-clientes-contenedor{
+        grid-template-rows: 14% 86%;
+    }
+
+    /* carrusel */
+    .grid-carrusel{
+        height: 40em;
+        grid-template-rows: 55% 20% 25%;
+    }
+
+    /* imagen carrusel */
+    .grid-carrusel > .imagen-logo{
+        width: 15em;
+        height: 10em;
+        top: 30%;
+    }
+    .grid-carrusel > .imagen-logo:nth-of-type(1){
+        background: url(../images/logo-epic-tb.jpg) no-repeat;
+        background-size: contain;
+    }
+    
+    .grid-carrusel > .imagen-logo:nth-of-type(2){
+        background: url(../images/logo-epic-tb.jpg) no-repeat;
+    }
+    
+    .grid-carrusel > .imagen-logo:nth-of-type(3){
+        background: url(../images/logo-epic-tb.jpg) no-repeat;
+    }
+
+    /* Parrafo del carrusel */
+    .grid-carrusel > p {
+        width: 27em;
+        font-size: .8em;
+    }
+
+    .carousel-indicators {
+        padding-bottom: 7em;
+    }
+    /* EL ESTUDIO */
+    .contenido-estudio{
+        grid-template-rows: 60% 40%;
+    }
+    .estudio-contenedor{
+        grid-template-rows: 14% 86%;
+    }
+    /* imagen estudio */
+    .imagen-estudio{
+        background:url(../images/estudio-foto-tb.jpg) no-repeat center;
+        background-size: cover;
+        height: 90%;
+        width: 86%;
+    }
+    /* textos */
+    .parrafo-estudio{
+        column-count: 1;
+        column-gap: .3em;
+        display: block;
+        text-align: center;
+        padding: 1.2em 0 0 6em;
+    }
+    .parrafo-estudio > p{
+        font-size: .75em;
+        line-height: 16pt;
+        margin-top: .5em;
+    }
+
+    /* Contactanos */
+    .contac-contenedor{
+        grid-template-rows: 14% 26% 13% 17% 12% 18%;
+    }
+
+    .info-contacto > h3{
+        align-self: center;
+        font-size: 1em;
+    }
+
+    /* titulo */
+    .contenedor > h2{
+        font-size: 1.7em;
+    }
+
+    .contenedor-contac > h2{
+        font-size: 1.7em;
+    }
+    /* redes sociales */
+    .redes-sociales{
+        display: flex;
+        justify-content: start;
+        margin-left: 2.9em;
+    }
+    
+    .contac-redes{
+        width: 16em;
+        height: 6em;
+        justify-content: space-evenly;
+        margin-top: 1em;
+    }
+    .contac-redes > a{
+        height: 49%;
+    }
+    .contac-redes > a:nth-of-type(n) > div{
+        width: 3em;
+        height: 5em;
+    }
+    .contac-redes > span:nth-child(even){
+        width: 0.9%;
+        height: 48%;
+    }
+    /* Subscribir al newsletter */
+    .contenedor-contac{
+        grid-template-rows: 2em;
+        height: 19%;
+        position: relative;
+        top: 2em;
+    }
+    form{
+        height: 65%;
+    }
+
+    form > input[type=email]{
+        padding: 3.2%;
+    }
+
+    form > input[type=email]::placeholder{
+        font-size: .9em;
+    }
+
+    /* footer */
+    footer{
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer > a:nth-child(n) > h3{
+        margin: 0;
+    }
+    footer > a:nth-child(3) > h3{
+       width: 25em;
+    }
+
+    footer > a:nth-child(4) > h3{
+        width: 25em;
+    }
 
  /* Final del media querie anchos desde 768  */   
 }
 
+/* 
+--------------------------------------------------------------------------------------
+Anchos desde 1224
+--------------------------------------------------------------------------------------
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape) {
+    /* menu */
+    .menu-movil > span{
+        width: 3%;
+        height: 75%;
+    }
+    /* nav */
+    nav{
+        height: 7.5%;
+    }
+
+    /* Ecosistemas */
+    .contenido-ecosistemas{
+        top: 10%;
+        height: 25%;
+        left: -13em;
+    }
+
+     /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-tb-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-tb-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-tb-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* boton ecosistema */
+    .contenido-ecosistemas > .button{
+        padding-top: .1%;
+        width: 19%;
+    }
+
+    #titulo-corporativo {
+        font-size: 5.3em;
+    }
+
+    /* Nuestros clientes */
+    .carousel-indicators{
+        padding-bottom: 3em;
+    }
+
+    .grid-carrusel{
+        grid-template-rows: 50% 20% 30%;
+    }
+
+    /* El estudio */
+    .parrafo-estudio{
+        column-count: 2;
+        padding: 1.5em 0 0 6em;
+    }
+
+    /* Contactanos */
+    .contac-contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 16% 14% 16% 20% 14% 20%;
+    }
+
+   #nuestros-clientes{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-items: center;
+        
+    } 
+    .info-contacto{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+        width: 70%;
+        align-content: end;
+        margin-left: 2.2em;
+    }
+
+    .redes-sociales{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .contac-redes{
+        margin-top: 4em;
+        height: 5em;    
+    }
+    
+    .contenedor-contac{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .contenedor-input{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        position: relative;
+        top: 2.2em;
+    }
+
+
+    form > input[type=email]{
+        top: 28%;
+    }
+    
+
+    footer{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    } 
+
+    /* info extra del footer */
+    .extra-info{
+        display: block;
+    }
+
+    footer > a:nth-child(n) > h3{
+        width: 17em;
+    }
+    footer > a:nth-child(5) > h3{
+        width: 100%;
+    }
+
+
+
+    /* Final del media querie anchos landscape de 768 x 1024 tabletas */
+}
 
 
 /* 
@@ -1006,7 +1484,24 @@ Iphone X
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
+    
 
+     /*boton ecosistemas  */
+     .contenido-ecosistemas > .button{
+         width: 33%;
+         padding-top: 1.3%;
+     }
+
+     /*Grid carrusel  */
+     .grid-carrusel {
+         position: relative;
+         top: 2em;
+     }
+    /*Parrafo estudio  */
+    .parrafo-estudio > p{
+        font-size: .7em;
+        line-height: 15pt;
+    }
 
 
 

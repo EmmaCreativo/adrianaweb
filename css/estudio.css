@@ -181,7 +181,7 @@ Responsive
 @media (min-width: 768px) and (max-width: 1024px){
     .estudio-principal{
         height: 90vh;
-        /* top:-4%; */
+        top:7%;
         align-content: initial;
         grid-template-columns: repeat(auto-fill, 27.4em);
         grid-template-rows: repeat(auto-fill, 16.45em);
