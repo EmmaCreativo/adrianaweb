@@ -238,18 +238,65 @@ Anchos desde 320
 
 
 
-@media (min-width: 320px) and (max-width: 360px){
+@media (min-width: 320px) and (max-width: 350px){
+	
+	/* boton seleccionar tamaño */
+	.btn-primary{
+		margin-top: 38em;
+		
+	}
+	/* precio */
+	.precio{
+		top: 26.6em;
+	}
+
+
+
+
 
 	/* Final del media querie anchos desde 320  */
 	}
 	
 	/* 
 	--------------------------------------------------------------------------------------
+	Anchos desde 360 
+	--------------------------------------------------------------------------------------
+	*/
+	
+	@media (min-width: 360px) and (max-width: 374px){
+
+		/* precio */
+		.precio{
+			top: 30em;
+		}
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 43em;
+			
+		}
+	
+	/* Final del media querie anchos desde 320  */
+	}
+
+		/* 
+	--------------------------------------------------------------------------------------
 	Anchos desde 380 
 	--------------------------------------------------------------------------------------
 	*/
 	
 	@media (min-width: 380px) and (max-width: 413px){
+
+		/* precio */
+		.precio{
+			top: 33.5em;
+		}
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 48em;
+			
+		}
 	
 	/* Final del media querie anchos desde 320  */
 	}
@@ -262,6 +309,16 @@ Anchos desde 320
 	*/
 	
 	@media (min-width: 414px) and (max-width: 767px){
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 49em;
+			
+		}
+		/* precio */
+		.precio{
+			top: 34.5em;
+		}
 	
 	/* Final del media querie anchos desde 414  */
 	}
@@ -373,7 +430,15 @@ Anchos desde 320
 		and (-webkit-device-pixel-ratio : 3) { 
 	
 	
-	
+			/* boton seleccionar tamaño */
+			.btn-primary{
+				margin-top: 54em;
+				
+			}
+			/* precio */
+			.precio{
+				top: 38em;
+			}
 	
 	/* Final del media querie Iphone X  */
 		}
@@ -394,4 +459,3 @@ Anchos desde 320
 	
 	/* Final del media querie Ipad Pro */
 	}
-	-----------Responsive---------------------------------------------------------------------------------------------------------------------- */

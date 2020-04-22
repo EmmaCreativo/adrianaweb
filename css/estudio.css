@@ -168,17 +168,21 @@ Responsive
     }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Final del media querie anchos desde 414  */
+}
+
+/* anchos desde 414  Horizontal*/
+
+@media (min-width: 414px) and (max-width: 767px) and (orientation: landscape){
+
+
+    .estudio-principal{
+        grid-template-columns: repeat(auto-fill, 52.7em);
+       
+    }
+
+
+/* Final del media querie anchos desde 414 horizontal  */
 }
 
 
@@ -204,6 +208,19 @@ Responsive
  /* Final del media querie anchos desde 768  */   
 }
 
+
+/* anchos desde 768 horizontal*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .estudio-principal{
+        height: 65.9em;
+        grid-template-columns: repeat(auto-fill, 36.5em);
+    }
+
+
+
+ /* Final del media querie anchos desde 768  horizontal */   
+}
 
 /* anchos desde 1224 */
 @media (min-width : 1224px){
@@ -240,10 +257,12 @@ Responsive
 
     .estudio-principal{
         align-content: center;
-        grid-template-columns: repeat(auto-fill, 26.4em);
-        grid-template-rows: repeat(auto-fill, 13.45em);
+        grid-template-columns: repeat(auto-fill, 20.4em);
+        grid-template-rows: repeat(auto-fill, 12.45em);
     }
-
+    .estudio-principal > div:nth-child(n) > a{
+        font-size: 1.5em;
+    }
 
   
 
@@ -263,10 +282,14 @@ Responsive
 
 
     .estudio-principal{
-        top: 0;
+        width: 80%;
+        height: 75vh;
+        top: 10em;
         align-content: center;
-        grid-template-columns: repeat(3, 35em);
-        grid-template-rows: repeat(3, 18em);
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, 27em);
+        grid-template-rows: repeat(auto-fill, 18em);
+        
     }
 
 
@@ -287,9 +310,9 @@ Responsive
 
 
     .estudio-principal{
-        top: 0;
+        top: 5em;
         align-content: center;
-        grid-template-columns: repeat(4, 33em);
+        grid-template-columns: repeat(auto-fill, 36em);
         grid-template-rows: repeat(2, 20em);
     }
 
@@ -324,6 +347,22 @@ Responsive
 /* Final del media querie Iphone 5 */
 }
 
+/* Iphone 5 horizontal */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+        .estudio-principal{
+            /* height: 255vh; */
+            grid-template-columns: 40.7em;
+        }
+
+
+/* Final del media querie Iphone 5 */
+}
 
 
 
@@ -353,17 +392,40 @@ Responsive
 
 
 /*  iPad Pro */
-/* Portrait and Landscape */
+/* Portrait */
 @media only screen 
 and (min-width: 1024px) 
 and (max-height: 1366px) 
-and (-webkit-min-device-pixel-ratio: 1.5) {
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: portrait) {
 
 
     .estudio-principal{
         height: 90vh;
-        grid-template-columns: repeat(4, 16em);
-        grid-template-rows: repeat(2, 15em);
+        grid-template-columns: repeat(auto-fill, 36em);
+        grid-template-rows: repeat(auto-fill, 21em);
+        align-content: center;
+       
+    }
+
+
+
+/* Final del media querie Ipad Pro */
+}
+
+/*  iPad Pro */
+/* Landscape */
+@media only screen 
+and (min-width: 1366px) 
+and (max-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: landscape) {
+
+
+    .estudio-principal{
+        height: 90vh;
+        grid-template-columns: repeat(auto-fill, 33em);
+        grid-template-rows: repeat(auto-fill, 15em);
         align-content: center;
        
     }
