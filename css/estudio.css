@@ -40,14 +40,14 @@ Estilos principales
 /* contenedor principal */
 .estudio-principal{
     width: 100%;
-    height: 211.8%;
+    height: 104em;
     position: relative;
     top: 10%;
     /* background: red; */
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(auto-fill, 100%);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(8,1fr);
     gap: 0;
     justify-content: center;
     align-content: center;
@@ -62,6 +62,7 @@ Estilos principales
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .estudio-principal > div:nth-child(n) > a{
     position: absolute;
@@ -81,37 +82,42 @@ Estilos principales
 }
 
 .estudio-principal > div:nth-child(1){
-    background: url(../images/categoria1.jpg) no-repeat;
+    background: url(../images/categoria1.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(2){
-    background: url(../images/categoria2.jpg) no-repeat;
+    background: url(../images/categoria2.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(3){
-    background: url(../images/categoria3.jpg) no-repeat;
+    background: url(../images/categoria3.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(4){
-    background: url(../images/categoria1.jpg) no-repeat;
+    background: url(../images/categoria1.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(5){
-    background: url(../images/categoria2.jpg) no-repeat;
+    background: url(../images/categoria2.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(6){
-    background: url(../images/categoria3.jpg) no-repeat;
+    background: url(../images/categoria3.jpg) no-repeat center;
     background-size: cover;
 }
 
 .estudio-principal > div:nth-child(7){
-    background: url(../images/categoria1.jpg) no-repeat;
+    background: url(../images/categoria1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.estudio-principal > div:nth-child(8){
+    background: url(../images/categoria3.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -154,7 +160,7 @@ Responsive
 
 
     .estudio-principal{
-        height: 199%;
+        height: 120em;
         /* top:-4%; */
         align-content: initial;
         grid-template-columns: repeat(auto-fill, 29.7em);
@@ -283,8 +289,8 @@ Responsive
     .estudio-principal{
         top: 0;
         align-content: center;
-        grid-template-columns: repeat(3, 33em);
-        grid-template-rows: repeat(3, 18em);
+        grid-template-columns: repeat(4, 33em);
+        grid-template-rows: repeat(2, 20em);
     }
 
 
@@ -329,7 +335,7 @@ Responsive
     and (-webkit-device-pixel-ratio : 3) { 
 
         .estudio-principal{
-            height: 181%;
+            height: 120em;
             /* top:-4%; */
             align-content: initial;
             grid-template-columns: repeat(auto-fill, 29.7em);
@@ -355,7 +361,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 
     .estudio-principal{
-    
+        height: 90vh;
+        grid-template-columns: repeat(4, 16em);
+        grid-template-rows: repeat(2, 15em);
         align-content: center;
        
     }

@@ -549,7 +549,7 @@ Contacto Principal
     height: 100%;
     display: grid; 
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 25% 13% 12% 12% 18%;
+    grid-template-rows: 20% 25% 13% 12% 17% 13%;
     
 }
 
@@ -649,7 +649,7 @@ Contacto Principal
 
 form{
     width: 100%;
-    height: 80%;
+    height: 55%;
     background-color:var(--color-beige);
     display: flex;
     justify-content: space-between;
@@ -698,28 +698,28 @@ footer{
     height: 100%;
     background: var(--color-gris);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
 }
 
 footer > a > h3{
-    font-size: .8em;
+    font-size: .7em;
     font-family:"Century Gothic";
     color: #fff;
 }
 
 footer > a:nth-child(3) > h3{
-    margin: 8% 0 8% 0;
+    margin: 8% 0 5% 0;
 }
 
 footer > a:nth-child(4) > h3{
-    margin: 0% 0 10% 0;
+    margin: 0% 0 4% 0;
 }
 
 footer > a:nth-child(5) > h3{
     width: 100%;
-    margin-top: 7%;
+    margin-top: 5%;
     font-size: .55em;
 }
 
@@ -976,7 +976,7 @@ Anchos desde 768 TABLETAS
     }
     /* menu */
     .menu-movil{
-        width: 5em;
+        width: 4.55em;
     }
     /* menu adorno */
     .menu-movil > span{
@@ -1111,7 +1111,7 @@ Anchos desde 768 TABLETAS
 
     /* Contactanos */
     .contac-contenedor{
-        grid-template-rows: 14% 26% 13% 17% 12% 18%;
+        grid-template-rows: 14% 26% 13% 17% 18% 12%;
     }
 
     .info-contacto > h3{
@@ -1159,7 +1159,7 @@ Anchos desde 768 TABLETAS
         top: 2em;
     }
     form{
-        height: 65%;
+        height: 45%;
     }
 
     form > input[type=email]{
@@ -1174,6 +1174,7 @@ Anchos desde 768 TABLETAS
     footer{
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
     footer > a:nth-child(n) > h3{
         margin: 0;
@@ -1191,7 +1192,7 @@ Anchos desde 768 TABLETAS
 
 /* 
 --------------------------------------------------------------------------------------
-Anchos desde 1224
+Anchos desde 1024 - tableta horizontal
 --------------------------------------------------------------------------------------
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape) {
@@ -1259,7 +1260,7 @@ Anchos desde 1224
     /* Contactanos */
     .contac-contenedor{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 16% 14% 16% 20% 14% 20%;
+        grid-template-rows: 16% 14% 16% 20% 17% 17%;
     }
 
    #nuestros-clientes{
@@ -1438,7 +1439,7 @@ Iphone 5
 
     /* Contactanos  */
     .contac-contenedor{
-        grid-template-rows: 20% 20% 15% 15% 12% 18%;
+        grid-template-rows: 20% 20% 15% 15% 15% 15%;
     }
     .contac-redes{
         align-items: center;
@@ -1461,17 +1462,411 @@ Iphone 5
     }
 
     /* Boton suscribir */
+    form {
+        height: 65%;
+    }
     form > button[type=submit]{
         font-size: .9em;
     }
 
+    footer{
+        flex-wrap: nowrap;
+    }
+    footer > a > h3{
+        font-size: .7em;
+    }
+    
     footer > a:nth-child(3) > h3{
         margin-top: 3%;
     }
-
+    footer > a:nth-child(4) > h3{
+        margin:0 0  7% 0 ;
+    }
+    footer > a:nth-child(5) > h3{
+        margin-top: 2%;
+    }
 /* Final del media querie Iphone 5 */
 }
 
+
+/* 
+--------------------------------------------------------------------------------------
+Iphone 5 - horizontal
+--------------------------------------------------------------------------------------
+*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 379px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: Landscape) {
+
+    /*  NAV */
+    nav{
+        height: 13%;
+    }
+    .menu-movil{
+        width: 4.3em;
+    }
+    .menu-movil > h3{
+        font-size: 1.2em;
+        margin-left: .4em;
+    }
+    .menu-movil > span{
+        height: 95%;
+    }
+
+    #logo-principal{
+        height: 1.6em;
+    }
+
+    /* menu oculto */
+
+    .menu-links > li > a{
+        font-size: 1.5em;
+    }
+    .menu-idiomas > li>a, h5 {
+        font-size: 1.2em;
+    }
+    .menu-redes{
+        width: 9em;
+        height: 10%;
+    }
+
+    /* video */
+    video{
+        width: 36em;
+        height: 17em;
+        object-fit: cover;
+    }
+
+    /* ECOSISTEMAS */
+
+     /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    .contenido-ecosistemas{
+        top: 0%;
+    }
+
+    .contenido-ecosistemas > h4{
+        margin: 2em 0 1em 0;
+    }
+
+    .contenido-ecosistemas > .button{
+        height: 40%;
+        padding-top: 0;
+    }
+
+    /* NUESTROS CLIENTES */
+
+    .nuestros-clientes-contenedor {
+        grid-template-rows: 23% 77%;
+    }
+    /* carrusel */
+    .grid-carrusel{
+        top:1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+
+    .grid-carrusel > h3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .grid-carrusel > p{
+        font-size: .7em;
+        margin-top: 2em;
+    }
+
+    .grid-carrusel > .imagen-logo{
+        left: 1em;
+    }
+
+    /* EL ESTUDIO */
+    .estudio-contenedor{
+        grid-template-rows: 23% 77%;
+    }
+    .contenido-estudio{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-estudio{
+        width: 80%;
+        height: 8em;
+    }
+
+    .parrafo-estudio{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        column-count: 1;
+        display: block;
+    }
+
+    .parrafo-estudio > p{
+        font-size: 0.6em;
+        line-height: 12pt;
+    }
+
+    /* contactanos */
+    .contac-contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 30% 25% 20%;
+    }
+
+    .info-contacto{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+        margin-left: 1.3em;
+        text-align: left;
+    }
+
+    .info-contacto > h3{
+        font-size: .7em;
+    }
+
+    .redes-sociales{
+        grid-column: 1/2 ;
+        grid-row: 3/4;
+    }
+    .contenedor-contac{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 97%;
+        justify-content: left;
+        grid-template-rows: 1.7em;
+    }
+
+    .contenedor-input{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    form > button[type=submit]{
+        font-size: .8em;
+    }
+    footer{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    footer > a:nth-of-type(n) > h3{
+        margin: .25em;
+        font-size: .7em;
+    }
+
+    footer > a:nth-child(5) > h3{
+        font-size: .5em;
+    }
+
+/* Final del media querie Iphone 5 horizontal */
+  }
+
+
+
+
+
+  @media only screen 
+  and (min-device-width: 380px) 
+  and (max-device-width: 767px)
+  /* and (-webkit-min-device-pixel-ratio: 2) */
+  and (orientation: Landscape) {
+
+    /*  NAV */
+    nav{
+        height: 13%;
+    }
+    .menu-movil{
+        width: 4.3em;
+    }
+    .menu-movil > h3{
+        font-size: 1.2em;
+        margin-left: .4em;
+    }
+    .menu-movil > span{
+        height: 95%;
+    }
+
+    #logo-principal{
+        height: 1.6em;
+    }
+
+    /* menu oculto */
+
+    .menu-links > li > a{
+        font-size: 1.5em;
+    }
+    .menu-idiomas > li>a, h5 {
+        font-size: 1.2em;
+    }
+    .menu-redes{
+        width: 9em;
+        height: 10%;
+    }
+
+    /* video */
+    video{
+        width: 36em;
+        height: 17em;
+        object-fit: cover;
+    }
+
+    /* ECOSISTEMAS */
+
+     /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-mo-h.jpg) no-repeat top center;
+        background-size: cover;
+    }
+
+    .contenido-ecosistemas{
+        top: 0%;
+    }
+
+    .contenido-ecosistemas > h4{
+        margin: 2em 0 1em 0;
+    }
+
+    .contenido-ecosistemas > .button{
+        height: 40%;
+        padding-top: 0;
+    }
+
+    /* NUESTROS CLIENTES */
+
+    .nuestros-clientes-contenedor {
+        grid-template-rows: 23% 77%;
+    }
+    /* carrusel */
+    .grid-carrusel{
+        top:1.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+
+    .grid-carrusel > h3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .grid-carrusel > p{
+        font-size: .7em;
+        margin-top: 2em;
+    }
+
+    .grid-carrusel > .imagen-logo{
+        left: 1em;
+    }
+
+    /* EL ESTUDIO */
+    .estudio-contenedor{
+        grid-template-rows: 23% 77%;
+    }
+    .contenido-estudio{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-estudio{
+        width: 80%;
+        height: 8em;
+    }
+
+    .parrafo-estudio{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        column-count: 1;
+        display: block;
+    }
+
+    .parrafo-estudio > p{
+        font-size: 0.6em;
+        line-height: 12pt;
+    }
+
+    /* contactanos */
+    .contac-contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 30% 25% 20%;
+    }
+
+    .info-contacto{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+        margin-left: 1.3em;
+        text-align: left;
+    }
+
+    .info-contacto > h3{
+        font-size: .7em;
+    }
+
+    .redes-sociales{
+        grid-column: 1/2 ;
+        grid-row: 3/4;
+    }
+    .contenedor-contac{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 97%;
+        justify-content: left;
+        grid-template-rows: 1.7em;
+    }
+
+    .contenedor-input{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    form > button[type=submit]{
+        font-size: .8em;
+    }
+    footer{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    footer > a:nth-of-type(n) > h3{
+        margin: .25em;
+        font-size: .7em;
+    }
+
+    footer > a:nth-child(5) > h3{
+        font-size: .5em;
+    }
+
+/* Final del media querie Iphone 5 horizontal */
+  }
 
 
 /* 
