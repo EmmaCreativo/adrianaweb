@@ -327,16 +327,125 @@ Anchos desde 320
 	
 	/* 
 	--------------------------------------------------------------------------------------
-	Anchos desde 768
+	Anchos desde 768 tableta vertical
 	--------------------------------------------------------------------------------------
 	*/
 	
 	@media (min-width: 768px) and (max-width: 1024px){
+
+		/* contenedor de cada producto */
+		.producto-contenedor{
+			background: url(../images/productos/producto-tb.jpg) no-repeat center;
+			background-size: cover;
+			height: 67%;
+		}
+
+		/* ------------------ Imagenes de los productos-------------- */
+
+		.producto-contenedor:nth-of-type(2){
+			
+		}
+
+		.producto-contenedor:nth-of-type(3){
+			
+		}
+
+		.producto-contenedor:nth-of-type(4){
+			
+		}
+
+		.producto-contenedor:nth-of-type(5){
+			
+		}
+
+		.producto-contenedor:nth-of-type(6){
+			
+		}
+
+		.producto-contenedor:nth-of-type(7){
+			
+		}
+
+		.producto-contenedor:nth-of-type(8){
+			
+		}
+
+		.producto-contenedor:nth-of-type(9){
+			
+		}
+
+		.producto-contenedor:nth-of-type(10){
+			
+		}
+
+		/* flechas de navegacion */
+		#siguiente::after, #antes::after, #siguiente::before, #antes::before{
+			position: relative;
+			top: 12.7em;
+			font-size: 1.5em;
+			color: var(--color-azul);
+		}
+		#siguiente, #antes{
+			width: 57% !important;
+		}
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 67em;
+			width: 20em;
+			height: 3em;
+			
+		}
+		/* precio */
+		.precio{
+			top: 43em;
+			font-size: 1em;
+		}
 	   
 	
 	 /* Final del media querie anchos desde 768  */   
 	}
 	
+	/* 
+	--------------------------------------------------------------------------------------
+	Anchos desde 768 tableta horizontal
+	--------------------------------------------------------------------------------------
+	*/
+	
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+
+
+		/* flechas de navegacion */
+		#siguiente::after, #antes::after, #siguiente::before, #antes::before{
+			position: relative;
+			top: 8.3em;
+			font-size: 1.5em;
+			color: var(--color-azul);
+		}
+		#siguiente, #antes{
+			width: 57% !important;
+		}
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 49em;
+			width: 18em;
+			height: 2.5em;
+			
+		}
+		/* paginacion de la tienda */
+		#pag-tienda{
+			top: 73.5%;
+		}
+		/* precio */
+		.precio{
+			top: 31em;
+			font-size: 1em;
+		}
+	   
+	
+	 /* Final del media querie anchos desde 768  */   
+	}
 	
 	
 	/* 
