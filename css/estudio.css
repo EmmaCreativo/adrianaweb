@@ -402,10 +402,17 @@ and (orientation: portrait) {
 
     .estudio-principal{
         height: 90vh;
-        grid-template-columns: repeat(auto-fill, 36em);
+        grid-template-columns: repeat(auto-fill, 36.55em);
         grid-template-rows: repeat(auto-fill, 21em);
         align-content: center;
        
+    }
+    .estudio-principal > div:nth-child(n){
+        width: 100%;
+    }
+
+    .estudio-principal > div:nth-child(n)::before{
+        width: 100%;
     }
 
 
@@ -429,6 +436,7 @@ and (orientation: landscape) {
         align-content: center;
        
     }
+   
 
 
 
