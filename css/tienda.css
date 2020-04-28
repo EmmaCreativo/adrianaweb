@@ -107,6 +107,11 @@ Estilos principales
 	color: var(--color-azul);
 }
 
+#siguiente:focus, #antes:focus{
+	border: none;
+	outline: none;
+}
+
 /* Paginacion de tienda */
 #pag-tienda{
 	position: absolute;
@@ -226,6 +231,12 @@ Estilos principales
 	cursor: pointer;
   }
 
+
+  /* footer tienda */
+
+  #footer-tienda{
+	  display: none;
+  }
 
   
 /*-----------------Responsive---------------------------------------------------------------------------------------------------------------------- */
@@ -389,6 +400,8 @@ Anchos desde 320
 			width: 57% !important;
 		}
 
+		
+
 		/* boton seleccionar tamaño */
 		.btn-primary{
 			margin-top: 67em;
@@ -479,6 +492,107 @@ Anchos desde 320
 	*/
 	@media (min-width : 1224px){
 	
+		/* contenedor principal */
+		#contenedor-tienda{
+			cursor: move;
+			width: 80%;
+			height: 73%;
+			/* outline: 1px solid red; */
+		}
+
+		.carrito{
+			width: 2em;
+			height: 1.3em;
+			left: 48%;
+		}
+
+		.carrito:hover{
+			animation: carrito 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+		}
+
+
+		/* contenedor de cada producto */
+		.producto-contenedor{
+			width: 16em !important;
+			
+		}
+
+		/* boton seleccionar tamaño */
+		.btn-primary{
+			margin-top: 34em;
+		}
+		.btn-primary:hover, .btn-primary:active{
+			background: var(--color-gris);
+			border: none;
+			outline: none;
+		}
+
+		/* precio */
+		.precio{
+			top: 24.5em;
+		}
+
+		#pag-tienda{
+			top: 94%;
+		}
+
+		/* flechas */
+		#siguiente, #antes{
+			top: 28.5em;
+		}
+		#siguiente{
+			margin-right: 23.5em;
+		}
+		#antes{
+			margin-left: 22em;
+		}
+
+
+		.carrito-content > p{
+			color: var(--color-azul);
+		}
+
+		#exampleModalCenterTitle{
+			color: var(--color-azul);
+		}
+
+
+
+		/* footer tienda */
+		#footer-tienda{
+			display: flex;
+			height: 9em;
+			position: absolute;
+			bottom: 0;
+			justify-content: center;
+		}
+		#footer-tienda > a:nth-of-type(n) > h3{
+			width: 27em;
+			text-align: center;
+		}
+
+		/* animacion carrito */
+		@keyframes carrito {
+			10%, 90% {
+				transform: translate3d(-1px, 0, 0);
+			  }
+			  
+			  20%, 80% {
+				transform: translate3d(2px, 0, 0);
+			  }
+			
+			  30%, 50%, 70% {
+				transform: translate3d(-4px, 0, 0);
+			  }
+			
+			  40%, 60% {
+				transform: translate3d(4px, 0, 0);
+			  }
+			
+		}
 	/* Final del media querie anchos desde 1224  */
 	}
 	
@@ -489,7 +603,20 @@ Anchos desde 320
 	--------------------------------------------------------------------------------------
 	*/
 	@media (min-width : 1360px){
-	
+		
+		/* cada contenedor producto */
+		.producto-contenedor{
+			width: 336px !important;
+		}
+
+
+		/* footer tienda */
+		#footer-tienda{
+			height: 8em;
+			
+		}#footer-tienda > a:nth-of-type(n) > h3{
+			width: 29em;	
+		}
 	
 	/* Final del media querie anchos desde 1360  */
 	}
@@ -616,6 +743,57 @@ Anchos desde 320
 			font-size: 1.5em;
 			top: 38.5em;
 		}
+	
+	/* Final del media querie Ipad Pro */
+	}
+
+
+	@media only screen 
+	and (min-width: 1366px) 
+	and (max-height: 1024px) 
+	and (-webkit-min-device-pixel-ratio: 1.5)
+	and (orientation: landscape) {
+	
+		/* carrito */
+		.carrito {
+			height: 1.5em;
+			top: 3%;
+			left: 49%;	
+		}
+
+		#contenedor-tienda{
+			width: 100%;
+		}
+
+		.btn-primary{
+			margin-top: 45em;
+		}
+
+		.precio{
+			top: 33.5em;
+		}
+
+		.producto-contenedor{
+			width: 428.667px !important;
+		}
+
+		/* flechas de navegacion */
+		#siguiente::after, #antes::after, #siguiente::before, #antes::before{
+			top: 12.5em;
+			font-size: 1.8em;
+		}
+
+		#siguiente{
+			margin-right: 33.5em;
+		}
+		#antes{
+			margin-left: 33.5em;
+		}
+		/* footer */
+		#footer-tienda > a:nth-of-type(n) > h3{
+			width: 30em;
+		}
+
 	
 	/* Final del media querie Ipad Pro */
 	}

@@ -1415,10 +1415,10 @@ Anchos desde 1224
         width: 6em;
         height: 2em;
         position: fixed;
-        top: 52em;
+        top: 50em;
         left: 3.5em;
         z-index: 333;
-        
+        filter: invert(90%);
     }
 
     .menu-compu-idiomas{
@@ -1428,14 +1428,14 @@ Anchos desde 1224
     }
 
     .menu-compu-idiomas > li>a{
-        color:#000;
+        color:#fff;
         font-family:"Crimson Roman";
         font-size: 1.2em;
     }
-    .menu-compu-idiomas > li>a>h5{
+    .menu-compu-idiomas > li>a,h5{
         font-family:"Crimson Roman";
         font-size: 1.4em;
-        color: var(--color-azul);
+        color: #fff;
     }
     
     .menu-compu-idiomas > li>a:active{
@@ -1469,7 +1469,7 @@ Anchos desde 1224
         height: 28%;
         position: relative;
         top: 2.5em;
-        right: 18em;
+        right: 20em;
     }
 
     .contenido-ecosistemas > h2{
@@ -1485,7 +1485,7 @@ Anchos desde 1224
         padding-top: .3%;
     }
     #titulo-corporativo{
-        font-size: 5em;
+        font-size: 4.3em;
     }
 
     /*------------- Nuestros Clientes ----------- */
@@ -1669,6 +1669,7 @@ Anchos desde 1224
         flex-direction: row;
         align-items: baseline;
         justify-content: center;
+        
     } 
 
     /* info extra del footer */
@@ -1677,6 +1678,7 @@ Anchos desde 1224
     }
 
     footer > a:nth-child(n) > h3{
+        text-align: center;
         width: 24em;
 
     }
@@ -1699,7 +1701,60 @@ Anchos desde 1360
 */
 @media (min-width : 1360px){
 
+    /* menu idiomas */
+    .idiomas-compu{
+        top: 49em;
+    }
 
+    /* --------------- ecosistemas -------------- */
+    .contenido-ecosistemas{
+        top: 4em;
+        right: 20em;
+    }
+
+    .contenido-ecosistemas > h2{
+        font-size: 7em;
+    }
+    #titulo-corporativo{
+        font-size: 5.3em;
+    }
+
+     /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-pc-1360.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-pc-1360.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-pc-1360.jpg) no-repeat top;
+        background-size: cover;
+        
+    }
+
+    
+
+
+    /* titulo sesiones */
+    .contenedor > h2{
+        margin-left: 2.2em;
+    }
+    .contenedor-pc > h2{
+        margin-left: -2em;
+    }
+
+    /* Info contacto */
+    .info-contacto{
+        margin-left: 3.5em;
+    }
+   
 /* Final del media querie anchos desde 1360  */
 }
 
@@ -2644,6 +2699,56 @@ and (orientation: portrait) {
         width: 40em;
     }
 
+
+
+
+/* Final del media querie Ipad Pro */
+}
+
+
+
+@media only screen 
+and (min-width: 1366px) 
+and (max-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (orientation: landscape) {
+
+   /* menu idiomas */
+   .idiomas-compu{
+        top: 68em;
+   }
+
+
+   /* contenedor principal */
+   .contenido-ecosistemas{
+        height: 20%;
+   }
+
+   /* titulos sesiones */
+   .contenedor > h2{
+       margin-left: 2.3em;
+   }
+
+   .contenedor-pc > h2{
+       margin-left: -2em;
+   } 
+
+   /* boton */
+   .contenido-ecosistemas > .button{
+       height: 16%;
+   }
+
+   /* titulo suscribir */
+
+   .contenedor-contac{
+       top: 2.9em;
+   }
+
+   /* formulario de suscribir */
+   form{
+       top: 8.3em;
+       height: 44%;
+   }
 
 
 

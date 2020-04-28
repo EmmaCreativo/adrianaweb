@@ -25,7 +25,13 @@ var swiper = new Swiper('.swiper-container', {
       },
       1224: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 40,
+        slidesOffsetBefore: 20,
+      },
+      1360: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+       
       },
     }
   });
@@ -51,10 +57,6 @@ var dir = window.location.href;
   }
 
   observar();
-
-
-
-
 
 
   // Get the modal

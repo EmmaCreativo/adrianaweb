@@ -122,7 +122,14 @@ Estilos principales
 /* Flechas */
 #flecha-de, #flecha-iz{
     display: none;
+    color: var(--color-azul);
+    
 }
+
+#flecha-de:focus,#flecha-iz:focus{
+    border :none;
+    outline: none;
+ }
 
 /* numeracion */
 
@@ -310,6 +317,67 @@ Anchos desde 320
     --------------------------------------------------------------------------------------
     */
     @media (min-width : 1224px){
+        /* titulo */
+        .tituloCategorias > h2{
+            margin: 0 2.6% 1% 4.5%;
+        }
+
+        /* Flechas */
+        
+        #flecha-de{
+           margin-right: 4em;
+           top: 40%;
+        }
+       
+        #flecha-iz{
+            margin-left: 4em;
+            top: 40%;
+        }
+        /* contenedor principal */
+        #conten-galeria{
+            height: 80%;
+        }
+
+        /* numeracion  */
+        #pagNum{
+            position: relative;
+            top: 2em;
+        }
+
+        .generalImg{
+            cursor:move ;
+        }
+
+        /* cada imagen de la galeria */
+
+        .imagenGaleria1{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+            
+        } 
+        
+        
+        .imagenGaleria2{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria3{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria4{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        
+        .imagenGaleria5{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+
     
     /* Final del media querie anchos desde 1224  */
     }
@@ -322,6 +390,45 @@ Anchos desde 320
     */
     @media (min-width : 1360px){
     
+        .contenedor-padre{
+            margin-top: 5.5%;
+        }
+    
+        .tituloCategorias > h2{
+            font-size: 2em;
+        }
+
+        /* Flechas */
+        #flecha-de, #flecha-iz{
+            display: block;
+        }
+         /* cada imagen de la galeria */
+
+         .imagenGaleria1{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria2{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria3{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria4{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        
+        .imagenGaleria5{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
     
     /* Final del media querie anchos desde 1360  */
     }
@@ -336,6 +443,50 @@ Anchos desde 320
     
     
     @media (min-width : 1920px){
+
+
+
+
+        .contenedor-padre{
+            margin-top: 5.5%;
+        }
+    
+        .tituloCategorias > h2{
+            font-size: 2em;
+        }
+
+        /* Flechas */
+        #flecha-de, #flecha-iz{
+            display: block;
+        }
+         /* cada imagen de la galeria */
+
+         .imagenGaleria1{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria2{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria3{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        .imagenGaleria4{
+            background:url(../images/exteriorEmbarazo/img-tb-1.jpg) no-repeat center;
+            background-size: contain;
+        } 
+        
+        
+        .imagenGaleria5{
+            background:url(../images/exteriorEmbarazo/img-tb-2.jpg) no-repeat center;
+            background-size: contain;
+        } 
+    
     
     /* Final del media querie anchos desde 1920  */
     }
@@ -483,7 +634,7 @@ Anchos desde 320
         }
     
         .tituloCategorias > h2{
-            font-size: 2.5em;
+            font-size: 2em;
         }
 
         /* Flechas */
