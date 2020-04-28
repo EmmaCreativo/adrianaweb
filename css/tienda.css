@@ -262,7 +262,9 @@ Anchos desde 320
 	}
 
 
-
+	#footer-tienda{
+		display: none;
+	}
 
 
 	/* Final del media querie anchos desde 320  */
@@ -286,6 +288,9 @@ Anchos desde 320
 			margin-top: 43em;
 			
 		}
+		#footer-tienda{
+			display: none;
+		}
 	
 	/* Final del media querie anchos desde 320  */
 	}
@@ -308,6 +313,9 @@ Anchos desde 320
 			margin-top: 48em;
 			
 		}
+		#footer-tienda{
+			display: none;
+		}
 	
 	/* Final del media querie anchos desde 320  */
 	}
@@ -329,6 +337,9 @@ Anchos desde 320
 		/* precio */
 		.precio{
 			top: 34.5em;
+		}
+		#footer-tienda{
+			display: none;
 		}
 	
 	/* Final del media querie anchos desde 414  */
@@ -431,6 +442,10 @@ Anchos desde 320
 			left: 72%;
 
 		}
+
+		#footer-tienda{
+			display: none;
+		}
 	
 	 /* Final del media querie anchos desde 768  */   
 	}
@@ -479,7 +494,10 @@ Anchos desde 320
 			left: 77%;
 
 		}
-	   
+
+	   #footer-tienda{
+			display: none;
+		}
 	
 	 /* Final del media querie anchos desde 768  */   
 	}
@@ -670,7 +688,9 @@ Anchos desde 320
 	  and (-webkit-min-device-pixel-ratio: 2)
 	  and (orientation: portrait) {
 	
-	
+		#footer-tienda{
+			display: none;
+		}
 	
 	
 	/* Final del media querie Iphone 5 */
@@ -698,6 +718,10 @@ Anchos desde 320
 			/* precio */
 			.precio{
 				top: 38em;
+			}
+
+			#footer-tienda{
+				display: none;
 			}
 	
 	/* Final del media querie Iphone X  */
@@ -742,6 +766,10 @@ Anchos desde 320
 		.precio{
 			font-size: 1.5em;
 			top: 38.5em;
+		}
+
+		#footer-tienda{
+			display: none;
 		}
 	
 	/* Final del media querie Ipad Pro */
