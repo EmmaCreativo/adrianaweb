@@ -40,8 +40,8 @@ var swiper = new Swiper('.swiper-container', {
 
 // --------------------------------------------------- Aparicion de carrito
 
-// var original = 'https://emmacreativo.github.io/adrianaweb/tienda.html';
-var original = 'http://127.0.0.1:5500/tienda.html';
+var original = 'https://emmacreativo.github.io/adrianaweb/tienda.html';
+// var original = 'http://127.0.0.1:5500/tienda.html';
 var carrito =document.getElementById('carritoCompra');
 var dir = window.location.href;
 //   dir.toString;
