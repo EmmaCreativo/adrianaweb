@@ -263,7 +263,7 @@ Anchos desde 320
 
 
 	#footer-tienda{
-		display: none;
+		display: none !important;
 	}
 
 
@@ -289,7 +289,7 @@ Anchos desde 320
 			
 		}
 		#footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	/* Final del media querie anchos desde 320  */
@@ -314,7 +314,7 @@ Anchos desde 320
 			
 		}
 		#footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	/* Final del media querie anchos desde 320  */
@@ -339,7 +339,7 @@ Anchos desde 320
 			top: 34.5em;
 		}
 		#footer-tienda{
-			display: none;
+			display: none !important; 
 		}
 	
 	/* Final del media querie anchos desde 414  */
@@ -444,7 +444,7 @@ Anchos desde 320
 		}
 
 		#footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	 /* Final del media querie anchos desde 768  */   
@@ -496,7 +496,7 @@ Anchos desde 320
 		}
 
 	   #footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	 /* Final del media querie anchos desde 768  */   
@@ -689,7 +689,7 @@ Anchos desde 320
 	  and (orientation: portrait) {
 	
 		#footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	
@@ -721,7 +721,7 @@ Anchos desde 320
 			}
 
 			#footer-tienda{
-				display: none;
+				display: none !important;
 			}
 	
 	/* Final del media querie Iphone X  */
@@ -769,7 +769,7 @@ Anchos desde 320
 		}
 
 		#footer-tienda{
-			display: none;
+			display: none !important;
 		}
 	
 	/* Final del media querie Ipad Pro */
