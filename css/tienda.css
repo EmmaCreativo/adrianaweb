@@ -235,7 +235,7 @@ Estilos principales
   /* footer tienda */
 
   #footer-tienda{
-	  display: none;
+	  display: none !important;
   }
 
   
