@@ -1693,6 +1693,46 @@ Anchos desde 1224
     /* Final del media querie anchos desde 1224  */
     }
 
+/* 
+	--------------------------------------------------------------------------------------
+	Anchos desde 1280
+	--------------------------------------------------------------------------------------
+*/
+	@media (min-width : 1280px){
+        /* menu idiomas */
+		.idiomas-compu{
+            top: 52em;
+        }
+        /* ------ ecosistemas -------- */
+        #titulo-corporativo{
+            font-size: 5em;
+        }
+
+        /* nuestros clientes */
+        .contenedor-pc > h2{
+            margin-right: 19.5%;
+        }
+
+        /* El estudio */
+        .contenedor > h2{
+            margin-left: 5%;
+        }
+
+        /* ----- contacto ------ */
+        #nuestros-clientes > h2{
+            margin-left: 8%;
+        }
+
+        .info-contacto{
+            margin-left: 2.85em;
+        }
+
+        form{
+            height: 45%;
+        }
+	/* Final del media querie anchos desde 1280  */
+	}
+
 
 /* 
 --------------------------------------------------------------------------------------
@@ -1777,12 +1817,78 @@ Anchos desde 1440
         height: 13.5%;
     }
 
+    form{
+        height: 50%;
+    }
+
     /* footer */
     footer > a:nth-child(n) > h3{
         width: 25em;
     }
    
 /* Final del media querie anchos desde 1440  */
+}
+
+/* 
+--------------------------------------------------------------------------------------
+Anchos desde 1526
+--------------------------------------------------------------------------------------
+*/
+
+@media (min-width : 1536px){
+
+    /* menu idiomas */
+    .idiomas-compu{
+        top: 63em;
+    }
+    /* nav */
+    .menu-compu-links > li > a{
+        font-size: 1.2em;
+    }
+
+    /* --------------- ecosistemas ------------- */
+
+    .contenido-ecosistemas{
+        right: 25em;
+    }
+
+    .contenido-ecosistemas > h2 {
+        font-size: 8em;
+    }
+
+    #titulo-corporativo{
+        font-size: 6.3em;
+    }
+    /* boton */
+    .contenido-ecosistemas > .button{
+        height: 13.5%;
+    }
+
+    /* ------- El estudio -------- */
+    .estudio-contenedor{
+        grid-template-rows: 17% 83%;
+    }
+    .parrafo-estudio > p {
+        width: 70%;
+    }
+
+    /* ---------- contactanos --------- */
+    .contac-contenedor{
+        grid-template-rows: 10% 14% 16% 20% 23% 17% ;
+    }
+    .contac-redes {
+        width: 55%;
+    }
+    form{
+        height: 50%;
+    }
+
+    /* footer */
+    footer > a:nth-child(n) > h3{
+        width: 26em;
+    }
+   
+/* Final del media querie anchos desde 1536  */
 }
 
 

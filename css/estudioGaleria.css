@@ -381,6 +381,42 @@ Anchos desde 320
     
     /* Final del media querie anchos desde 1224  */
     }
+
+    /* 
+	--------------------------------------------------------------------------------------
+	Anchos desde 1280
+	--------------------------------------------------------------------------------------
+    */
+    @media (min-width : 1280px){
+    
+        .contenedor-padre{
+            height: 70% !important;
+            margin-top: 6%;
+        }
+
+        /* flechas */
+        #flecha-de, #flecha-iz{
+            display: block;
+        }
+
+        #flecha-de{
+            margin-right: 6em;
+            top: 45%;
+            
+         }
+        
+         #flecha-iz{
+             margin-left: 6em;
+             top: 45%;
+         }
+
+
+
+
+
+
+    /* Final del media querie anchos desde 1280  */
+    }
     
     
     /* 

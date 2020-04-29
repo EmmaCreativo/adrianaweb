@@ -253,6 +253,32 @@ Responsive
 /* Final del media querie anchos desde 1224  */
 }
 
+/* 
+	--------------------------------------------------------------------------------------
+	Anchos desde 1280
+	--------------------------------------------------------------------------------------
+*/
+@media (min-width : 1280px){
+    
+    .estudio-principal{
+        align-content: center;
+        grid-template-columns: repeat(auto-fill, 20.4em);
+        grid-template-rows: repeat(auto-fill, 12.45em);
+        top: 13em;
+    }
+    .estudio-principal > div:nth-child(n) > a{
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+/* Final del media querie anchos desde 1280  */
+}
+
+
 
 
 /* anchos desde 1360 */
@@ -451,8 +477,8 @@ and (orientation: portrait) {
 /*  iPad Pro */
 /* Landscape */
 @media only screen 
-and (max-width: 1366px) 
-and (max-height: 1024px) 
+and (max-device-width: 1366px) 
+and (min-device-height: 1024px)
 and (-webkit-min-device-pixel-ratio: 1.5)
 and (orientation: landscape) {
 
@@ -465,6 +491,17 @@ and (orientation: landscape) {
         top: 4em;
        
     }
+
+
+    /* .estudio-principal{
+        align-content: center;
+        grid-template-columns: repeat(auto-fill, 20.4em);
+        grid-template-rows: repeat(auto-fill, 12.45em);
+        top: 20%;
+    }
+    .estudio-principal > div:nth-child(n) > a{
+        font-size: 1.5em;
+    } */
    
 
 

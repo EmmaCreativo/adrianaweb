@@ -581,7 +581,7 @@ Anchos desde 320
 
 		/* footer tienda */
 		#footer-tienda{
-			display: flex;
+			display: flex !important;
 			height: 9em;
 			position: absolute;
 			bottom: 0;
@@ -612,6 +612,45 @@ Anchos desde 320
 			
 		}
 	/* Final del media querie anchos desde 1224  */
+	}
+
+	/* 
+	--------------------------------------------------------------------------------------
+	Anchos desde 1280
+	--------------------------------------------------------------------------------------
+	*/
+	@media (min-width : 1280px){
+
+		
+		/* cada contenedor producto */
+		.producto-contenedor{
+			width: 314.667px !important;
+		}
+
+		.precio{
+			top: 25.5em;
+		}
+
+
+		/* flechas */
+		#siguiente, #antes{
+			top: 29.5em;
+		}
+		#antes{
+			margin-left: 23em;
+		}
+
+
+		/* footer tienda */
+		#footer-tienda{
+			display: flex !important;
+			height: 8em;
+			
+		}#footer-tienda > a:nth-of-type(n) > h3{
+			width: 29em;	
+		}
+	
+	/* Final del media querie anchos desde 1280  */
 	}
 	
 	
@@ -681,6 +720,53 @@ Anchos desde 320
 	
 	/* Final del media querie anchos desde 1440  */
 	}
+
+	/* 
+--------------------------------------------------------------------------------------
+Anchos desde 1526
+--------------------------------------------------------------------------------------
+*/
+
+@media (min-width : 1536px){
+
+	/* cada contenedor producto */
+	.producto-contenedor{
+		width: 382.667px!important;
+	}
+
+	/* boton */
+	.btn-primary{
+		margin-top: 45em;
+	}	
+
+
+	.precio{
+		top: 30em;
+		font-size: 1em;
+	}
+
+	/* flechas */
+	#siguiente, #antes{
+		top: 39.5em;
+	}
+
+	#siguiente{
+		margin-right: 28.5em;
+	}
+
+	#antes{
+		margin-left: 27.5em;
+	}
+
+    
+
+    /* footer */
+    #footer-tienda > a:nth-child(n) > h3{
+        width: 33em;
+    }
+   
+/* Final del media querie anchos desde 1536  */
+}
 	
 	
 	
