@@ -547,6 +547,10 @@ El estudio Principal
 
 }
 
+.parrafo-compu{
+    display: none;
+}
+
 
 
 /* 
@@ -1778,10 +1782,6 @@ Anchos desde 1360
         background-size: cover;
         
     }
-
-    
-
-
     /* titulo sesiones */
     .contenedor > h2{
         margin-left: 2.2em;
@@ -1831,7 +1831,7 @@ Anchos desde 1440
 
 /* 
 --------------------------------------------------------------------------------------
-Anchos desde 1526
+Anchos desde 1536
 --------------------------------------------------------------------------------------
 */
 
@@ -1894,12 +1894,179 @@ Anchos desde 1526
 
 /* 
 --------------------------------------------------------------------------------------
-Anchos desde 1920
+Anchos desde 1920 HD
 --------------------------------------------------------------------------------------
 */
 
 
 @media (min-width : 1920px){
+
+    /* Nav */
+    nav{
+        height: 5.3em;
+    }
+
+    /* menu */
+    .menu-compu{
+        width: 40em;
+    }
+    .menu-compu-links{
+        align-items: center;
+    }
+    .menu-compu-links > li > a{
+        font-size: 1.3em;
+    }
+
+    /* menu idiomas  */
+    .idiomas-compu{
+        top: 70em;
+    }
+
+    /* ---------- Ecosistemas --------- */
+       /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-pc-1920.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-pc-1920.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-pc-1920.jpg) no-repeat top;
+        background-size: cover;
+        
+    }
+
+    /* contenido ecosistemas */
+    .contenido-ecosistemas{
+        right: 32em;
+        height: 26.5%;
+    }
+    .contenido-ecosistemas > h2{
+        font-size: 9.5em;
+    }
+    .contenido-ecosistemas > h4{
+        font-size: 1.1em;
+    }
+    .contenido-ecosistemas > .button{
+        height: 16.5%;
+        font-size: 1.2em;
+        padding-top: .7%;
+    }
+    #titulo-corporativo{
+        font-size: 7.5em;
+    }
+
+    /* ------ nuestros clientes ------ */
+    .nuestros-clientes-compu{
+        width: 85%;
+    }
+    .contenedor-pc{
+        width: 21em;
+    }
+    .contenedor-pc > h2{
+        margin-left: 3.4em;
+        font-size: 1.6em;
+    }
+
+    .imagen-logo-pc{
+        width: 43%;
+        height: 32%;
+
+    }
+
+    .cliente-compu > p{
+        font-size: .85em;
+    }
+
+    .cliente-compu > h3{
+        font-size: .8em;
+    }
+
+    /* ---------- el estudio -------- */
+    .estudio-contenedor{
+        width: 90%;
+    }
+    .parrafo-mb{
+        display: none;
+    }
+    .parrafo-compu{
+        display: block;
+    }
+    .parrafo-estudio{
+        height: 75%;
+    }
+    .parrafo-estudio > p{
+        width: 80%;
+        line-height: 20pt;
+        top: 7em;
+    }
+
+    .imagen-estudio{
+        height: 80%;
+        margin: 4.5em 0 0 0;
+    }
+    .contenedor > h2{
+        margin-bottom: 1em;
+        font-size: 1.6em;
+    }
+
+    /* ---------- contacto ----------- */
+    #nuestros-clientes > h2{
+        font-size: 1.6em;
+        margin-left: 18%;
+        margin-bottom: 3em;
+    }
+    .contac-contenedor {
+        width: 100%;
+        grid-template-rows: 10% 14% 16% 20% 25% 15%;
+    }
+    .contenedor-contac > h2{
+        font-size: 1.6em;
+    }
+
+    .info-contacto{
+        margin-left: 9.5em;
+    }
+
+    .info-contacto > h3{
+        font-size: 1.2em;
+    }
+    .contac-redes{
+        height: 7em;
+        margin-left: 6em;
+    }
+    .parrafo-solo-pc{
+        width: 79%;
+        font-size: .9em;
+    }
+    form{
+        width: 75%;
+        height: 40%;
+        top: 9.3em;
+    }
+
+    form > button[type=submit]{
+        font-size: 1.4em;
+    }
+    form > input[type=email]{
+        padding: 1%;
+    }
+    form > input[type=email]::placeholder{
+        font-size: 1em;
+    }
+
+    footer > a:nth-child(n) > h3{
+        width: 32em;
+    }
+
+
 
 /* Final del media querie anchos desde 1920  */
 }
@@ -1920,7 +2087,89 @@ Imac
 
 @media (min-width : 2560px){
 
+    video{
+        width: 100vw !important;
+        object-fit:cover ;
+        height: 100%;
+    }
 
+    .idiomas-compu{
+        top: 87em;
+    }
+
+     /* ---------- Ecosistemas --------- */
+       /* cada imagen */
+     /* Imagen principal estudio */
+     .imagen-principal-estudio{
+        background: url(../images/Estudio-principal-pc-mac.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-exterior{
+        background: url(../images/Exterior-principal-pc-mac.jpg) no-repeat top;
+        background-size: cover;
+    }
+
+    /* Imagen principal estudio */
+    .imagen-principal-corporativo{
+        background: url(../images/Corporativo-principal-pc-mac.jpg) no-repeat top;
+        background-size: cover;
+        
+    }
+
+    .contenido-ecosistemas{
+        right: 42em;
+        height: 15em;
+    }
+
+    .contenido-ecosistemas > h2{
+        font-size: 9em;
+    }
+
+    .contenido-ecosistemas > .button{
+        font-size: 1.2em;
+    }
+
+    #titulo-corporativo{
+        font-size: 7.5em;
+    }
+
+    /* ----- nuestros clientes----- */
+
+    .cliente-compu > p{
+        width: 60%;
+    }
+
+    /* ------ el estudio ----- */
+    .parrafo-estudio > p{
+        width: 65%;
+    }
+
+    .contenedor > h2{
+        margin-left: 1.2em;
+    }
+
+    /* ----------- contactanos -------- */
+    #nuestros-clientes > h2 {
+        margin-left: 12%;
+    }
+
+    .parrafo-solo-pc{
+        width: 76%;
+    }
+
+    .info-contacto{
+        margin-left: 8em;
+    }
+
+    .contac-redes{
+        width: 40%;
+    }
+
+    footer > a:nth-child(n) > h3{
+        width: 43em;
+    }
 
 /* Final del media querie anchos desde 1920  */
 }

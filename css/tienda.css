@@ -777,7 +777,82 @@ Anchos desde 1526
 	*/
 	
 	
-	@media (min-width : 1920px){
+@media (min-width : 1920px){
+
+	/* cada contenedor producto */
+	.producto-contenedor{
+		width: 485.333px!important;
+	}
+
+	.producto-contenedor{
+		background: url(../images/productos/producto-pc-mac.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	/* ------------------ Imagenes de los productos-------------- */
+
+	.producto-contenedor:nth-of-type(2){
+		
+	}
+
+	.producto-contenedor:nth-of-type(3){
+		
+	}
+
+	.producto-contenedor:nth-of-type(4){
+		
+	}
+
+	.producto-contenedor:nth-of-type(5){
+		
+	}
+
+	.producto-contenedor:nth-of-type(6){
+		
+	}
+
+	.producto-contenedor:nth-of-type(7){
+		
+	}
+
+	.producto-contenedor:nth-of-type(8){
+		
+	}
+
+	.producto-contenedor:nth-of-type(9){
+		
+	}
+
+	.producto-contenedor:nth-of-type(10){
+		
+	}
+
+	/* boton */
+	.btn-primary{
+		padding: .45rem 5.5rem;
+		margin-top: 53em;
+	}	
+
+	.precio{
+		top: 28.5em;
+		font-size: 1.2em;
+	}
+
+	/* flechas */
+	#siguiente, #antes{
+		top: 45.5em;
+	}
+
+	#siguiente{
+		margin-right: 35.5em;
+	}
+	#antes{
+		margin-left: 35.5em;
+	}
+
+	#footer-tienda > a:nth-child(n) > h3{
+		width: 41em;
+	}
 	
 	/* Final del media querie anchos desde 1920  */
 	}
@@ -796,12 +871,54 @@ Anchos desde 1526
 	*/
 	
 	
-	@media (min-width : 2560px){
+@media (min-width : 2560px){
 	
-	
-	
-	/* Final del media querie anchos desde 1920  */
+
+	/* cada contenedor producto */
+	.producto-contenedor{
+		width: 656px!important;
 	}
+
+	.precio{
+		top: 44.5rem;
+		font-size: 1.2em;
+	}
+
+	/* boton */
+	.btn-primary{
+		margin-top: 56em;
+	}
+
+	/* flechas */
+	#siguiente, #antes{
+		top: 58.4em;
+		/* top: calc(100vh * 62.5 / 100); */
+	}
+
+	#siguiente{
+		margin-right: 60.5em;
+	}
+	#antes{
+		margin-left: 60.5em;
+	}
+
+	#footer-tienda{
+		height: 10em;
+	}
+	#footer-tienda > a:nth-child(n) > h3{
+		width: 55em;
+	}
+	#footer-tienda > a:nth-child(-n+4) > h3{
+		font-size: .8em;
+	}
+
+	#footer-tienda > a:nth-child(5) > h3{
+		margin-top: -5%;
+	}
+	
+	
+/* Final del media querie anchos desde 1920  */
+}
 	
 	
 	

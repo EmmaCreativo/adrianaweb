@@ -338,7 +338,7 @@ Responsive
     .estudio-principal{
         width: 80%;
         height: 75vh;
-        top: 10em;
+        top: 14em;
         align-content: center;
         margin: 0 auto;
         grid-template-columns: repeat(auto-fill, 27em);
